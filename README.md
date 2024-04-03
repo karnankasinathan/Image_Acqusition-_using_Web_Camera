@@ -36,7 +36,7 @@ import cv2
 viedoCaptureObject=cv2.VideoCapture(0)
 while(True):
     ret,frame=viedoCaptureObject.read()
-    cv2.imwrite("afsar.jpg",frame)
+    cv2.imwrite("karnan.jpg",frame)
     result=False
 viedoCaptureObject.release()
 cv2.destroyAllWindows()
@@ -70,7 +70,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=smaller_frame
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222240004_afsar',image)
+    cv2.imshow('212222230062_karnan',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -93,7 +93,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222240004_afsar',image)
+    cv2.imshow('212222230062_karnan',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
